@@ -1,27 +1,38 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hoanneo Studio – Chính sách quyền riêng tư</title>
-<style>body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;line-height:1.6;color:#1f2328;background:#fff}a{color:#0b57d0}.muted{color:#666}h2{margin-top:28px}</style></head>
+<style>body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;line-height:1.6;color:#1f2328;background:#fff}a{color:#0b57d0}.muted{color:#666}h2{margin-top:28px}ul{padding-left:20px}</style></head>
 <body>
 <h1>Chính sách quyền riêng tư – Hoanneo Studio</h1>
-<p class="muted">Cập nhật: 30/10/2026</p>
+<p class="muted">Cập nhật: 09/11/2026</p>
 
 <h2>1. Ứng dụng là gì</h2>
-<p>Hoanneo Studio là phần mềm cá nhân chạy trên máy tính của chủ sở hữu, dùng YouTube API Services để tải video lên và quản lý video trên các kênh YouTube của chính chủ sở hữu. Khi dùng ứng dụng, bạn đồng ý với <a href="https://www.youtube.com/t/terms">Điều khoản dịch vụ của YouTube</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</p>
+<p>Hoanneo Studio là phần mềm cá nhân chạy trên máy tính của chủ sở hữu, dùng để đăng video do chính chủ sở hữu tạo ra lên các kênh của họ: kênh YouTube và Trang Facebook "Biệt Đội Tái Chế", kênh YouTube "Hoanneo Musiclab". Ứng dụng không phục vụ người dùng khác.</p>
+<p>Ứng dụng dùng YouTube API Services. Khi dùng ứng dụng, bạn đồng ý với <a href="https://www.youtube.com/t/terms">Điều khoản dịch vụ của YouTube</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>. Phần Facebook tuân theo <a href="https://www.facebook.com/policies_center">các chính sách của Meta</a>.</p>
 
 <h2>2. Dữ liệu được truy cập</h2>
-<p>Sau khi bạn cho phép bằng tài khoản Google, ứng dụng truy cập: thông tin kênh YouTube (tên kênh), danh sách và trạng thái video do ứng dụng tải lên, số lượt xem / thích / bình luận của các video đó; ứng dụng tải video, ảnh bìa, phụ đề lên kênh và đổi lịch công khai của video.</p>
+<ul>
+<li><b>YouTube</b> (sau khi chủ sở hữu cho phép bằng tài khoản Google): tên kênh; danh sách, trạng thái và số lượt xem / thích / bình luận của video do ứng dụng tải lên. Ứng dụng tải video, ảnh bìa, phụ đề lên kênh và đổi lịch công khai của video.</li>
+<li><b>Facebook</b> (quyền pages_show_list, pages_read_engagement, pages_manage_posts): danh sách Trang chủ sở hữu quản lý, để chọn đúng Trang; đăng Reels và video lên Trang đó.</li>
+</ul>
+<p>Ứng dụng không đọc tin nhắn, không thu thập thông tin của người xem, người theo dõi hay người bình luận.</p>
 
 <h2>3. Cách lưu trữ và sử dụng</h2>
-<p>Mã đăng nhập (OAuth token) và dữ liệu trên chỉ được lưu trên máy tính chạy ứng dụng, dùng duy nhất để tải lên và quản lý video của chính chủ kênh. Ứng dụng không có máy chủ riêng, không bán, không chia sẻ dữ liệu cho bên thứ ba và không dùng dữ liệu để quảng cáo.</p>
+<p>Mã đăng nhập (token YouTube, token Trang Facebook) và dữ liệu trên chỉ được lưu trên máy tính chạy ứng dụng, dùng duy nhất để đăng và quản lý video của chính chủ sở hữu. Ứng dụng không có máy chủ riêng, không bán, không chia sẻ dữ liệu cho bên thứ ba và không dùng dữ liệu để quảng cáo.</p>
 
-<h2>4. Thu hồi quyền và xóa dữ liệu</h2>
-<p>Bạn có thể thu hồi quyền truy cập bất cứ lúc nào tại <a href="https://myaccount.google.com/permissions">trang quyền của tài khoản Google</a>, hoặc bấm “Ngắt” trong phần Cài đặt của ứng dụng (xóa mã đăng nhập trên máy). Xóa thư mục dữ liệu của ứng dụng sẽ xóa toàn bộ dữ liệu đã lưu.</p>
+<h2 id="xoa-du-lieu">4. Thu hồi quyền và xóa dữ liệu</h2>
+<ul>
+<li><b>Google / YouTube:</b> thu hồi tại <a href="https://myaccount.google.com/permissions">trang quyền của tài khoản Google</a>, hoặc bấm “Ngắt kết nối” trong Cài đặt của ứng dụng.</li>
+<li><b>Facebook:</b> vào Facebook &gt; Cài đặt &amp; quyền riêng tư &gt; Cài đặt &gt; Doanh nghiệp tích hợp (Business Integrations), chọn Hoanneo Studio và bấm Gỡ. Token đã lưu trên máy sẽ mất hiệu lực ngay.</li>
+<li>Xóa các file <code>facebook_token.json</code>, <code>youtube_token*.json</code> hoặc cả thư mục <code>data</code> của ứng dụng sẽ xóa toàn bộ dữ liệu đã lưu. Video đã đăng nằm trên YouTube / Facebook, chủ sở hữu xóa trực tiếp ở đó.</li>
+<li>Cần hỗ trợ xóa dữ liệu: gửi email tới <a href="mailto:hoandx164@gmail.com">hoandx164@gmail.com</a>, xử lý trong vòng 30 ngày.</li>
+</ul>
 
 <h2>5. Liên hệ</h2>
 <p><a href="mailto:hoandx164@gmail.com">hoandx164@gmail.com</a></p>
 
 <hr>
 <h2>English summary</h2>
-<p class="muted">Hoanneo Studio uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. With your permission it accesses your channel name, the videos it uploaded and their statistics, and it uploads videos, thumbnails and captions and changes their publish schedule. OAuth tokens and data are stored only on the local computer running the app, used only to manage the owner's own videos, and never sold or shared with third parties. You can revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Contact: hoandx164@gmail.com.</p>
+<p class="muted">Hoanneo Studio is a personal desktop tool that publishes the owner's own videos to the owner's own channels (the "Biệt Đội Tái Chế" YouTube channel and Facebook Page, and the "Hoanneo Musiclab" YouTube channel). It uses YouTube API Services; by using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. With permission it accesses the channel name and the videos it uploaded with their statistics, uploads videos, thumbnails and captions and changes their publish schedule. On Facebook it uses pages_show_list, pages_read_engagement and pages_manage_posts only to select the owner's Page and publish Reels and videos to it. It does not collect viewer data. Tokens and data are stored only on the local computer running the app, used only to manage the owner's own content, and never sold or shared with third parties.</p>
+<p class="muted" id="data-deletion"><b>Data deletion:</b> revoke Google access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; revoke Facebook access in Facebook Settings &gt; Business Integrations &gt; remove Hoanneo Studio. Deleting the app's <code>data</code> folder removes all stored data. For help, email <a href="mailto:hoandx164@gmail.com">hoandx164@gmail.com</a> (handled within 30 days).</p>
 </body></html>
